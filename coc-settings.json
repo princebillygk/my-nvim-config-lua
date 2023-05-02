@@ -1,0 +1,10 @@
+{
+  "suggest.noselect": true,
+  "snippets.ultisnips.pythonPrompt": false,
+  "cSpell.userWords": [
+    "Deckman",
+    "nestjs",
+    "noselect"
+  ],
+  "coc.preferences.formatOnSave": true
+}
