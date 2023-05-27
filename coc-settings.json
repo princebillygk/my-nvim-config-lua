@@ -2,9 +2,12 @@
   "suggest.noselect": true,
   "snippets.ultisnips.pythonPrompt": false,
   "cSpell.userWords": [
+    "CABINMAN",
     "Deckman",
     "nestjs",
-    "noselect"
+    "noselect",
+    "refrerence",
+    "subroute"
   ],
   "coc.preferences.formatOnSave": true
 }
