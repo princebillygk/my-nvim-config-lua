@@ -5,6 +5,7 @@ return require('packer').startup(function(use)
 
   -- Theme
   use 'EdenEast/nightfox.nvim'
+  use 'ayu-theme/ayu-vim'
 
   -- Appearance
   use 'nanozuki/tabby.nvim'

@@ -12,7 +12,9 @@ vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.colorcolumn = "80"
 -- Theme
-vim.cmd [[colorscheme carbonfox]]
+-- vim.cmd [[colorscheme carbonfox]]
+vim.g.ayucolor = "dark"
+vim.cmd [[colorscheme ayu]]
 
 --  Feline
 require('feline').setup()

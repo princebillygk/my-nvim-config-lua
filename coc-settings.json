@@ -4,10 +4,12 @@
   "cSpell.userWords": [
     "CABINMAN",
     "Deckman",
+    "crxjs",
     "nestjs",
     "noselect",
     "refrerence",
-    "subroute"
+    "subroute",
+    "vite"
   ],
   "coc.preferences.formatOnSave": true
 }
