@@ -2,14 +2,25 @@
   "suggest.noselect": true,
   "snippets.ultisnips.pythonPrompt": false,
   "cSpell.userWords": [
+    "BDIX",
     "CABINMAN",
     "Deckman",
+    "Nextjs",
+    "Opps",
+    "PLASMO",
     "crxjs",
+    "errno",
+    "immer",
     "nestjs",
     "noselect",
+    "princebillygk",
     "refrerence",
     "subroute",
+    "upsert",
     "vite"
   ],
-  "coc.preferences.formatOnSave": true
+  "coc.preferences.formatOnSave": true,
+  "colors.enable": true,
+  "clangd.fallbackFlags": ["-std=c++17"],
+  "clangd.path": "/usr/bin/clangd"
 }
