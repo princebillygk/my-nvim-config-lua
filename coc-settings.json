@@ -4,12 +4,17 @@
   "cSpell.userWords": [
     "CABINMAN",
     "Deckman",
+    "Duplicacy",
+    "Ticketsummary",
+    "bdix",
     "crxjs",
     "nestjs",
     "noselect",
     "refrerence",
     "subroute",
+    "upsert",
     "vite"
   ],
-  "coc.preferences.formatOnSave": true
+  "coc.preferences.formatOnSave": true,
+  "colors.enable": true
 }
