@@ -27,10 +27,15 @@ return require('packer').startup(function(use)
   }
 
   use {
-   'nvim-pack/nvim-spectre',
+    'nvim-pack/nvim-spectre',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   use "sindrets/diffview.nvim"
   use "lewis6991/gitsigns.nvim"
+  use {
+    'kkoomen/vim-doge',
+    run = ':call doge#install()'
+  }
+
 end)
