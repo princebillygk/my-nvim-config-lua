@@ -16,6 +16,7 @@ vim.foldmethod="syntax"
 -- vim.cmd [[colorscheme carbonfox]]
 vim.g.ayucolor = "dark"
 vim.cmd [[colorscheme ayu]]
+vim.opt.iskeyword:remove("_")
 
 --  Feline
 require('feline').setup()
@@ -23,18 +24,6 @@ require('feline').setup()
 -- Nerdtree Configurations
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = false,
-  },
-})
 nmap("<Leader>``", ":NvimTreeToggle<CR>")
 nmap("<Leader>`c", ":NvimTreeCollapse<CR>")
 
@@ -52,13 +41,20 @@ local function my_on_attach(bufnr)
   -- vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
   vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
 end
-
--- pass to setup along with your other options
-require("nvim-tree").setup {
-  ---
+require("nvim-tree").setup({
   on_attach = my_on_attach,
-  ---
-}
+  sort_by = "case_sensitive",
+  view = {
+    width = 45,
+    side="right"
+  },
+  -- renderer = {
+  --   group_empty = true,
+  -- },
+  filters = {
+    dotfiles = false
+  },
+})
 
 -- COC
 require('coc')
