@@ -5,22 +5,34 @@
     "BDIX",
     "CABINMAN",
     "Deckman",
+    "Duplicacy",
+    "Karmoker",
     "Nextjs",
     "Opps",
     "PLASMO",
     "crxjs",
+    "deque",
     "errno",
+    "followee",
+    "followees",
     "immer",
+    "leetgo",
     "nestjs",
     "noselect",
+    "nums",
     "princebillygk",
     "refrerence",
+    "strs",
     "subroute",
+    "unfollow",
     "upsert",
     "vite"
   ],
   "coc.preferences.formatOnSave": true,
   "colors.enable": true,
   "clangd.fallbackFlags": ["-std=c++17"],
-  "clangd.path": "/usr/bin/clangd"
+  "clangd.path": "/usr/bin/clangd",
+  "emmet.includeLanguages": {
+    "SCSS": "CSS"
+  }
 }

@@ -31,6 +31,25 @@ keyset("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
 -- <C-g>u breaks current undo, please make your own choice
 keyset("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], opts)
 
+-- Snippets
+-- Use <C-l> for trigger snippet expand.
+keyset("i", "<c-l>", "<Plug>(coc-snippets-expand)")
+
+-- Use <C-j> for select text for visual placeholder of snippet.
+keyset("v", "<c-j>", "<Plug>(coc-snippets-select)")
+
+-- Use <C-j> for jump to next placeholder, it's default of coc.nvim
+vim.g.coc_snippet_next = '<c-j>'
+
+-- Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+vim.g.coc_snippet_prev = '<c-k>'
+
+-- Use <C-j> for both expand and jump (make expand higher priority.)
+keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
+
+-- Use <leader>x for convert visual selected code to snippet
+keyset("x", "<leader>x", "<Plug>(coc-convert-snippet)")
+
 -- Use <c-j> to trigger snippets
 keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 -- Use <c-space> to trigger completion
