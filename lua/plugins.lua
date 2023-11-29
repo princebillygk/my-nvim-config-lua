@@ -26,7 +26,18 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
-  -- Snippets
-  -- use 'epilande/vim-react-snippets'
-  use 'SirVer/ultisnips'
+  use {
+    'nvim-pack/nvim-spectre',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+
+  use "sindrets/diffview.nvim"
+  use "lewis6991/gitsigns.nvim"
+  use {
+    'kkoomen/vim-doge',
+    run = ':call doge#install()'
+  }
+
+  use 'tpope/vim-fugitive'
+
 end)

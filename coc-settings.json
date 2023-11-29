@@ -1,6 +1,8 @@
 {
   "suggest.noselect": true,
   "snippets.ultisnips.pythonPrompt": false,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
   "cSpell.userWords": [
     "BDIX",
     "CABINMAN",
@@ -10,11 +12,17 @@
     "Nextjs",
     "Opps",
     "PLASMO",
+    "Shhhhh",
+    "Ticketsummary",
+    "Weeeeee",
+    "backoff",
+    "bdix",
+    "cruiseman",
     "crxjs",
     "deque",
     "errno",
-    "followee",
-    "followees",
+    "heapify",
+    "heapq",
     "immer",
     "leetgo",
     "nestjs",
@@ -22,17 +30,14 @@
     "nums",
     "princebillygk",
     "refrerence",
+    "srvc",
     "strs",
     "subroute",
-    "unfollow",
     "upsert",
     "vite"
   ],
   "coc.preferences.formatOnSave": true,
   "colors.enable": true,
   "clangd.fallbackFlags": ["-std=c++17"],
-  "clangd.path": "/usr/bin/clangd",
-  "emmet.includeLanguages": {
-    "SCSS": "CSS"
-  }
+  "clangd.path": "/usr/bin/clangd"
 }
