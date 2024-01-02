@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   use { 'neoclide/coc.nvim', branch = 'release' }
 
   -- Utities
+  use 'mattn/emmet-vim'
   use 'tpope/vim-commentary'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
