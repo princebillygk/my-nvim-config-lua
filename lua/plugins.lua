@@ -3,29 +3,43 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  -- Theme
+  -- /*********/
+  -- /* Theme */
+  -- /*********/
   use 'EdenEast/nightfox.nvim'
   use 'ayu-theme/ayu-vim'
 
-  -- Appearance
+  -- /**************/
+  -- /* Appearance */
+  -- /**************/
   use 'nanozuki/tabby.nvim'
   use 'freddiehaddad/feline.nvim'
 
-  -- NVIM Tree
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
 
-  -- COC
+  -- /*******/
+  -- /* COC */
+  -- /*******/
   use { 'neoclide/coc.nvim', branch = 'release' }
 
-  -- Utities
+  -- /***********/
+  -- /* Utities */
+  -- /***********/
+  -- Emmet
   use 'mattn/emmet-vim'
-  use 'tpope/vim-commentary'
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    -- or                            , branch = '0.1.x',
-    requires = { { 'nvim-lua/plenary.nvim' } }
+  vim.g.user_emmet_settings = {
+    ['javascript'] = {
+      ['extends'] = 'jsx',
+      ['default_attributes'] = {
+        ['label'] = { ['htmlFor'] = ' ' },
+        ['class'] = { ['className'] = ' ' },
+      },
+    },
   }
+
+  -- Comment
+  use 'tpope/vim-commentary'
 
   use {
     'nvim-pack/nvim-spectre',
@@ -40,5 +54,4 @@ return require('packer').startup(function(use)
   }
 
   use 'tpope/vim-fugitive'
-
 end)
