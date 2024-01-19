@@ -3,6 +3,7 @@
   "snippets.ultisnips.pythonPrompt": false,
   "javascript.updateImportsOnFileMove.enabled": "prompt",
   "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "bootstrap-classname.filetypes": ["javascriptreact"],
   "cSpell.userWords": [
     "BDIX",
     "CABINMAN",
