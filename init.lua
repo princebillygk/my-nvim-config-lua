@@ -24,8 +24,8 @@ require('feline').setup()
 -- Nerdtree Configurations
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-nmap("<Leader>``", ":NvimTreeToggle<CR>")
-nmap("<Leader>`c", ":NvimTreeCollapse<CR>")
+nmap("<Leader>t", ":NvimTreeToggle<CR>")
+nmap("<Leader>tc", ":NvimTreeCollapse<CR>")
 
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
